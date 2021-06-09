@@ -13,7 +13,7 @@ import Text.Julius
 
 
 formCardapio :: Maybe Cardapio -> Form Cardapio
-formCardapio mc = renderDivs $ Cardapio
+formCardapio mc = renderBootstrap $ Cardapio
     <$> areq textField "Nome do item: " (fmap cardapioNomeitem mc)
     <*> areq textField "Descrição: " (fmap cardapioDescricao mc)
     <*> areq doubleField "Preço: " (fmap cardapioPreco mc)
@@ -27,7 +27,8 @@ getItemCardapioR = do
             $maybe mensa <- msg
                 <div>
                     ^{mensa}
-            
+            <a href=@{HomeR}>
+                Home
             <h1>
                 CADASTRO DE ITEM DO CARDÁPIO
             
