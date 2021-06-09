@@ -48,7 +48,7 @@ getListaCliR = do
     defaultLayout $ do 
         addStylesheet (StaticR css_bootstrap_css)
         $(whamletFile "templates/pageFila.hamlet")
-        toWidgetHead $(luciusFile "templates/pagefila.lucius")
+        toWidgetHead $(luciusFile "templates/pageFila.lucius")
         
 postApagarCliR :: ClienteId -> Handler Html
 postApagarCliR cid = do
