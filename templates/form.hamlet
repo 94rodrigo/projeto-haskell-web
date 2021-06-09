@@ -1,8 +1,11 @@
 <a href=@{HomeR}>
-    <img src=@{StaticR img_home_svg} class="icone">
+    Home
 $maybe mensa <- msg
     <div>
         ^{mensa}
+
+<h1> 
+    EDITAR ITEM DO CARDAPIO
 
 <form method=post action=@{rota}>
     ^{widget}
