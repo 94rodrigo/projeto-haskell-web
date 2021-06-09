@@ -24,8 +24,8 @@ getItemCardapioR = do
     msg <- getMessage
     defaultLayout $ do
         addStylesheet (StaticR css_bootstrap_css)
-        toWidgetHead $(luciusFile "templates/pageCadastro.lucius")
-        $(whamletFile "templates/pageCadastro.hamlet")
+        toWidgetHead $(luciusFile "templates/pageAddComida.lucius")
+        $(whamletFile "templates/pageAddComida.hamlet")
 
 postItemCardapioR :: Handler Html
 postItemCardapioR = do
