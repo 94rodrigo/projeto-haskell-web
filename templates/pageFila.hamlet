@@ -1,0 +1,34 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right">
+            <form action=@{SairR} method=post>
+                <button type="submit" class="btn btn-danger">Sair
+
+<table id="customers">
+    <tr>
+        <th>
+            Nome
+        <th>
+            Email
+        <th>
+            Celular
+        <th>
+            Comando
+    <tbody>
+        $forall Entity cid cliente <- clientes
+            <tr>
+                <td>
+                    #{clienteNome cliente}
+                <td>
+                    #{clienteEmail cliente}
+                <td>
+                    #{clienteCelular cliente}
+                <td>
+                    <form method="post" action=@{ApagarCliR cid}>
+                        <input type="submit" value="Chamar" class="btn btn-success" >

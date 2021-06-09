@@ -1,0 +1,35 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right"> 
+
+<section>
+    <h1 style="text-align:center;">
+        Instruções
+    <div class="grupo-instrucoesFila">
+        <h2>
+            Como funciona a fila:
+        <ul>
+            <li>
+                O cliente ao clicar no botão entrar na fila;
+            <li>
+                preenche os dados que estão sendo pedido;
+            <li>
+                espera ser chamado via WhatsApp;
+        <h2>
+            Como funciona o Login:
+        <ul>
+            <li>
+                O usuário ao clicar no login user;
+            <li>
+                loga com sua conta. (Admin ou User);
+            <li>
+                Entra no painel de controle de Users/Admin;
+            <li>
+                No botão fila, os users/admin chamam o próximo cliente. 
+                    OBS: para cadastrar novos usuários, somente Admin tem permissão.

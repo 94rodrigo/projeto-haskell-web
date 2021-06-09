@@ -1,0 +1,35 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/ HomeR GET
+/instrucao InstrucaoR GET
+/sobre SobreR GET
+
+/cadastro PaginaCadastroR GET POST
+/cadastrarItem ItemCardapioR GET POST
+/listaItens ListaItensR GET
+
+/listacomida ListaComidaR GET
+
+/compra/#ClienteId ComprarR GET POST
+/carrinho/#ClienteId CarrinhoR GET
+
+/clientes ListaCliR GET
+/cliente/apagar/#ClienteId ApagarCliR POST
+
+/item/apagar/#CardapioId ApagarItemR POST
+/item/editar/#CardapioId EditarItemR GET POST
+
+/usuarios ListaUseR GET
+/usuario/apagar/#UsuarioId ApagarUseR POST
+
+/gerenciamento GerenciaComidaR GET
+
+/usuario UsuarioR GET POST
+/login AutR GET POST
+/logout SairR POST
+
+/admin AdminR GET
+/adminfunc FuncoesAdminR GET

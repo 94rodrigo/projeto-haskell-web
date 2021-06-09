@@ -1,0 +1,19 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right"> 
+
+<section>
+    <div class="grupo-btnAdm">
+        <h2>Gerenciamento Cardapio!</h2>
+        <p><strong>Adicionar:</strong> Adicionar comidas.<br>
+                <strong>Gerenciar:</strong> Gerenciar comidas.
+        <hr>
+        <div class="btns">
+            <a href=@{ItemCardapioR} class="btn btn-primary">Adicionar
+            <a href=@{ListaComidaR} class="btn btn-primary">Gerenciar

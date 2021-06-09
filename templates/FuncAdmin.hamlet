@@ -1,0 +1,22 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right">
+            <form action=@{SairR} method=post>
+                <button type="submit" class="btn btn-danger">Sair
+    
+<section>
+    <div class="grupo-btnAdm">
+        <h2>Gerenciamento de Usuários!</h2>
+        <p><strong>Cadastrar:</strong> Inserir novos usuário.<br>
+                <strong>Gerenciar:</strong> Controle de usuários.
+        <hr>
+        <div class="btns">
+            <a href=@{UsuarioR} class="btn btn-primary">Cadastrar
+            <a href=@{ListaUseR} class="btn btn-primary">Gerenciar
+

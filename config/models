@@ -1,0 +1,25 @@
+Usuario
+    email Text
+    senha Text
+    UniqueEmail email
+    deriving Show
+
+Pedido
+    cliid ClienteId
+    prodid CardapioId
+    dia Day
+    qt Int
+
+Cardapio
+    nomeitem Text
+    descricao Text
+    preco Double
+    deriving Show
+
+Cliente
+    nome Text
+    email Text
+    celular Int
+    deriving Show
+
+ -- By default this file is used in Model.hs (which is imported by Foundation.hs)

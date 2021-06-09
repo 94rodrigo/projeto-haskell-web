@@ -1,0 +1,9 @@
+<a href=@{HomeR}>
+    <img src=@{StaticR img_home_svg} class="icone">
+$maybe mensa <- msg
+    <div>
+        ^{mensa}
+
+<form method=post action=@{rota}>
+    ^{widget}
+    <input type="submit" value=#{m}>

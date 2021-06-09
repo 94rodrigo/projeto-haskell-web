@@ -1,0 +1,42 @@
+<title>SemEspera
+
+$maybe email <- usuario
+    <header>
+        <nav class="topnav">
+            <a href=@{HomeR} class="navbar-brand">
+                <img src=@{StaticR img_logoSemFundo2_png} class="logo" alt="logo">
+            <a class="btnHeader" href=@{HomeR}>Home</a>
+            <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+            <a class="btnHeader" href=@{SobreR}>Sobre</a>
+            <div class="header-right">
+                <form action=@{SairR} method=post>
+                    <button type="submit" class="btn btn-danger">Sair
+    <section>   
+        <div class="grupo-btnAdm">
+            <h2>Bem Vindo!</h2>
+            <p><strong>Fila:</strong> para acessar a fila virtual.<br>
+                <strong>Acesso Administrativo:</strong> Acesso restrito, somente Admin.
+            <hr>
+            <div class="btns">
+                <a href=@{ListaCliR} class="btn btn-primary">Fila
+                <a href=@{FuncoesAdminR} class="btn btn-primary">Acesso Administrativo
+                <a href=@{GerenciaComidaR} class="btn btn-primary">Gerenciar Cardapio
+
+$nothing
+    <header>
+        <nav class="topnav">
+            <a href=@{HomeR} class="navbar-brand">
+                <img src=@{StaticR img_logoSemFundo2_png} class="logo" alt="Logo">
+            <a class="btnHeader" href=@{HomeR}>Home</a>
+            <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+            <a class="btnHeader" href=@{SobreR}>Sobre</a>
+            <div class="header-right">
+                <a class="btn btn-success" href=@{PaginaCadastroR}>Entrar na fila
+                <a class="btn btn-secondary" href=@{AutR}>Login User
+    <section>
+        <h1>Fila Virtual
+        <p>Sem aglomeração no seu Comércio!
+        <p>Agilidade e Segurança no atendimento e gerenciamento. Basta
+            <a class="btnEntraFila" href=@{PaginaCadastroR}> Entrar na Fila
+            para aguardar sua vez.
+

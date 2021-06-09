@@ -1,0 +1,6 @@
+<h1>
+    PEDIDO DE #{clienteNome cliente}
+    <ul>
+         $forall (Entity _ cardapio, Entity _ pedido, Entity _ _) <- tudo
+            <li>
+                #{cardapioNomeitem cardapio}, #{mult (cardapioPreco cardapio) (fromIntegral (pedidoQt pedido))} no dia #{show $ pedidoDia pedido}

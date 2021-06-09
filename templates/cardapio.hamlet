@@ -1,0 +1,28 @@
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right">
+
+<table id="customers">
+    <thead>
+        <tr>
+            <th>
+                ITEM
+            <th>
+                DESCRIÇÃO
+            <th>
+                PREÇO
+        
+    <tbody>
+        $forall Entity iid item <- cardapio
+            <tr>
+                <td>
+                    #{cardapioNomeitem item}
+                <td>
+                    #{cardapioDescricao item}
+                <td>
+                    #{cardapioPreco item}

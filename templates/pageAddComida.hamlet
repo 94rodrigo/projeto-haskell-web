@@ -1,0 +1,23 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right">
+
+
+<section>
+    $maybe mensa <- msg
+        <div>
+            ^{mensa}
+        <div class="grupo-login">  
+            <h1>
+                CADASTRO DE ITEM DO CARDÁPIO
+            
+            <form method=post action=@{ItemCardapioR}>
+                ^{widget}
+                <div class="grupo-btn">
+                    <input type="submit" value="Adicionar" method="post" class="btn btn-success">

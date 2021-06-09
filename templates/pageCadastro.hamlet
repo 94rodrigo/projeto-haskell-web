@@ -1,0 +1,22 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right">
+            
+
+<section>
+    $maybe mensa <- msg
+        <div>
+            ^{mensa}
+    <div class="grupo-login">
+        <h2 style="color: white;">
+            Digite os seguintes dados:
+        <form method=post action=@{PaginaCadastroR}>
+            ^{widget}
+            <div class="grupo-btn">  
+                <input type="submit" value="Entrar" method="post" class="btn btn-success">

@@ -1,0 +1,21 @@
+<title>SemEspera
+<header>
+    <nav class="topnav">
+        <a href=@{HomeR} class="navbar-brand">
+            <img src=@{StaticR img_logoSemFundo2_png} class="logo">
+        <a class="btnHeader" href=@{HomeR}>Home</a>
+        <a class="btnHeader" href=@{InstrucaoR}>Instruções</a>
+        <a class="btnHeader" href=@{SobreR}>Sobre</a>
+        <div class="header-right"> 
+
+<section>
+    <h1 style="text-align:center;">
+        Sobre
+    <div class="grupo-sobre">
+        <p> SemEspera surgiu para facilitar o controle de pessoas nos comércios 
+            nos tempos de pandemia, onde a aglomeração de pessoas de ser evitadas.
+            Para isso o SemEspera é um Fila Virtual que faz com que seus clientes,
+            evitem de esperaremm no local, dando mais autonomia e segurança.
+        <strong>
+            <p> Um site rápido e simples para automatizar as filas!
+            
