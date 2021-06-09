@@ -22,10 +22,19 @@ getItemCardapioR :: Handler Html
 getItemCardapioR = do
     (widget, _) <- generateFormPost (formCardapio Nothing)
     msg <- getMessage
-    defaultLayout $ do
-        addStylesheet (StaticR css_bootstrap_css)
-        toWidgetHead $(luciusFile "templates/pageAddComida.lucius")
-        $(whamletFile "templates/pageAddComida.hamlet")
+    defaultLayout $
+        [whamlet|
+            $maybe mensa <- msg
+                <div>
+                    ^{mensa}
+            
+            <h1>
+                CADASTRO DE ITEM DO CARDÁPIO
+            
+            <form method=post action=@{ItemCardapioR}>
+                ^{widget}
+                <input type="submit" value="Adicionar" method="post">
+        |]
 
 postItemCardapioR :: Handler Html
 postItemCardapioR = do
